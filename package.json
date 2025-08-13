@@ -1,0 +1,38 @@
+{
+  "name": "testsmith",
+  "version": "0.1.0",
+  "description": "Reusable Playwright helpers and reporters",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": ["dist"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "clean": "rimraf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "peerDependencies": {
+    "@playwright/test": ">=1.40.0",
+    "axios": "^1.6.0",
+    "dotenv": "^16.0.0"
+  },
+  "peerDependenciesMeta": {
+    "dotenv": { "optional": true }
+  },
+  "devDependencies": {
+    "tsup": "^8.0.1",
+    "@tsconfig/node18": "^18.2.2",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.5.4"
+  }
+} 
