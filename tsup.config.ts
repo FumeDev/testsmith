@@ -13,6 +13,7 @@ export default defineConfig({
     'axios',
     'dotenv',
     'openai',
+    'stagehand',
     'fs',
     'path',
     'crypto',

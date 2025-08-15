@@ -1,7 +1,7 @@
 {
   "name": "testsmith",
   "version": "0.1.0",
-  "description": "Reusable Playwright helpers and reporters",
+  "description": "Reusable Playwright helpers and reporters (Stagehand-compatible)",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -24,15 +24,19 @@
   "peerDependencies": {
     "@playwright/test": ">=1.40.0",
     "axios": "^1.6.0",
-    "dotenv": "^16.0.0"
+    "dotenv": "^16.0.0",
+    "openai": ">=4.0.0",
+    "stagehand": "github:FumeDev/stagehand"
   },
   "peerDependenciesMeta": {
-    "dotenv": { "optional": true }
+    "dotenv": { "optional": true },
+    "stagehand": { "optional": true }
   },
   "devDependencies": {
     "tsup": "^8.0.1",
     "@tsconfig/node18": "^18.2.2",
     "rimraf": "^5.0.5",
-    "typescript": "^5.5.4"
+    "typescript": "^5.5.4",
+    "@types/node": "^20.12.12"
   }
-} 
+}
